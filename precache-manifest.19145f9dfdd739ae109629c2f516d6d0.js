@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72ebd8c21f0c2c1d7d49c862c8564f1c",
+    "revision": "bb08635698712961ffc1f09ed37f80b2",
     "url": "/hestia/index.html"
   },
   {

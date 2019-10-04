@@ -1,0 +1,7 @@
+.Hero {
+  min-height: calc(100vh - 72px);
+  background: url("../../images/room-23.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

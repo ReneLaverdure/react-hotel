@@ -2,21 +2,70 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fondamento', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+:root {
+  --primaryColor: #b1874c;
+  --cardColor: #49371e;
+  --offWhite: #e9e9e9;
+  --fontBlack: rgb(54, 54, 54);
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  /* margin-bottom: 0.5em; */
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  /* margin-bottom: 1em; */
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  /* margin-bottom: 1.5em; */
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
   color: white;
+  display: inline-block;
+  text-decoration: none;
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  margin-top: 1.5rem;
+  border: 3px solid var(--primaryColor);
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #09d3ac;
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
 }

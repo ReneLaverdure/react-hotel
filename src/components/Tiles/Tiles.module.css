@@ -1,0 +1,4 @@
+.Tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(270px, 1fr));
+}

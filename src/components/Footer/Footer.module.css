@@ -1,0 +1,11 @@
+.Footer{
+  background: var(--fontBlack);
+  width: 100%;
+  padding: .6rem;
+}
+
+.Text {
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+}

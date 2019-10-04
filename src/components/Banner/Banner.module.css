@@ -1,0 +1,21 @@
+.Banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  width: 40vw;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.Title {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .Banner {
+    width: 60vw;
+  }
+
+}

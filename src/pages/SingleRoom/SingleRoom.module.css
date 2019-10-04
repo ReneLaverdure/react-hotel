@@ -1,0 +1,70 @@
+.SingleRoom {
+  padding: 5rem 0 0 0;
+}
+
+.Imagecontainer {
+  width: 80vw;
+  margin:1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+
+.RoomImage {
+  width: 100%;
+  display: block;
+}
+
+.SingleRoomInfo {
+  text-align: left;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem auto;
+}
+
+.Desc,
+.Info {
+  margin: 1rem 2rem;
+  line-height: 1.7rem;
+}
+.DescText {
+  margin-top: 1.5rem;
+}
+
+.Info {
+  letter-spacing: .3rem;
+}
+
+.InfoItem{
+  margin-top: 1rem;
+}
+
+.RoomExtra {
+  width: 80vw;
+  margin: 0 auto 3rem auto;
+}
+.RoomExtra h6 {
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+}
+.Extra {
+  text-align: left;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  margin-top: 1.5rem;
+
+}
+
+@media screen and (max-width: 800px) {
+  .SingleRoomInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+

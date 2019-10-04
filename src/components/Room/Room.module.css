@@ -1,0 +1,46 @@
+.card{
+  margin: 1rem;
+  color: white;
+  background-color: var(--cardColor);
+  position: relative;
+}
+
+.CardImg{
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.Info {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+.InfoItem{
+  margin: 0.5rem;
+}
+
+
+
+.RoomLink{
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+  border: 3px solid var(--primaryColor);
+  padding: .7rem;
+}
+
+.card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.card:hover .CardImg {
+  opacity: 0.3;
+}
+
+.card:hover .RoomLink {
+  transform: translate(-50%, -50%) scale(1);
+}

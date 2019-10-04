@@ -17,7 +17,7 @@ function Navbar() {
     <nav className={classes.Navbar} >
 
       <div className={classes.NavbarLeft}>
-        <Link className={classes.HomeLink} to='/'>
+        <Link className={classes.HomeLink} to='/hestia/'>
           <h1>
             Hestia
             <GiFireBowl />
@@ -31,7 +31,7 @@ function Navbar() {
 
         <ul className={nav ? classes.NavToogleOn : classes.NavbarRight}>
           <li className={classes.NavbarRightItem}>
-            <Link className={classes.NavLink} to='/'>
+            <Link className={classes.NavLink} to='/hestia/'>
               Home
             </Link>
           </li>

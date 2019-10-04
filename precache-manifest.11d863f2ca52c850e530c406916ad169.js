@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3cce46acde12fa51865a52e73ac44d3c",
+    "revision": "b2ec14d027aeed0f2f96e362d262d7c3",
     "url": "/hestia/index.html"
   },
   {
-    "revision": "4df643d3a586f1b241ad",
+    "revision": "6d853b311e029e0f4c6b",
     "url": "/hestia/static/css/main.c3f071a1.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hestia/static/js/2.a654254d.chunk.js"
   },
   {
-    "revision": "4df643d3a586f1b241ad",
-    "url": "/hestia/static/js/main.de1fa0a9.chunk.js"
+    "revision": "6d853b311e029e0f4c6b",
+    "url": "/hestia/static/js/main.d2617b08.chunk.js"
   },
   {
     "revision": "125aaae1eb8841c916bf",

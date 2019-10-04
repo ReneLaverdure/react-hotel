@@ -8,7 +8,7 @@ export default function Error() {
     <div>
         <Hero>
           <Banner title="404 Error">
-              <Link to='/' className="btn-primary">
+              <Link to='/hestia/' className="btn-primary">
                 Go Back To Home
               </Link>
           </Banner>

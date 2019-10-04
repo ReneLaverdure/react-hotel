@@ -15,7 +15,7 @@ export default function rooms() {
     </div>
     <StyledHero>
       <Banner title="Our Rooms" >
-        <Link to='/' className='btn-primary'>
+        <Link to='/hestia/' className='btn-primary'>
           Return Home
         </Link>
       </Banner>

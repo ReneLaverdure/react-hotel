@@ -6,7 +6,7 @@ import {RoomProvider} from './roomContext'
 import Home from './pages/Home';
 import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom/SingleRoom';
-import Error from './pages/Error'
+// import Error from './pages/Error'
 
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -18,11 +18,11 @@ function App() {
         <RoomProvider>
 
           <Switch>
-             
+              
               <Route path='/rooms/' exact component={Rooms} />
               <Route path="/rooms/:slug" exact component={SingleRoom} />
-              <Route path='/' component={Home} />
-              <Route component={Error} />
+              <Route path='/hestia' exact component={Home} />
+              {/* <Route component={Error} /> */}
           </Switch>
 
         </RoomProvider>

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hestia/precache-manifest.7eae88b81493beea42ebb7212cd0acf9.js"
+  "/hestia/precache-manifest.fc0ff67d722eb4ad7151f11fc26d002a.js"
 );
 
 self.addEventListener('message', (event) => {

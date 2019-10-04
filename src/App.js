@@ -18,10 +18,10 @@ function App() {
         <RoomProvider>
 
           <Switch>
-              
+              <Route path='/' exact component={Home} />
               <Route path='/rooms/' exact component={Rooms} />
               <Route path="/rooms/:slug" exact component={SingleRoom} />
-              <Route path='/hestia/' exact component={Home} />
+              
               <Route component={Error} />
           </Switch>
 

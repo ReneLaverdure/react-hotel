@@ -2,7 +2,7 @@
   "name": "react_hotel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://renelaverdure.github.io/hestia/",
+  "homepage": "https://renelaverdure.github.io/hestia",
   "dependencies": {
     "classnames": "^2.2.6",
     "gh-pages": "^2.1.1",

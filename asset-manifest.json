@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hestia/static/css/main.c3f071a1.chunk.css",
-    "main.js": "/hestia/static/js/main.5622160d.chunk.js",
-    "main.js.map": "/hestia/static/js/main.5622160d.chunk.js.map",
+    "main.js": "/hestia/static/js/main.9e903c34.chunk.js",
+    "main.js.map": "/hestia/static/js/main.9e903c34.chunk.js.map",
     "runtime-main.js": "/hestia/static/js/runtime-main.d7c8f660.js",
     "runtime-main.js.map": "/hestia/static/js/runtime-main.d7c8f660.js.map",
     "static/js/2.15cc9fbb.chunk.js": "/hestia/static/js/2.15cc9fbb.chunk.js",
     "static/js/2.15cc9fbb.chunk.js.map": "/hestia/static/js/2.15cc9fbb.chunk.js.map",
     "index.html": "/hestia/index.html",
-    "precache-manifest.cdc49da5a5583334d3ff811aa6d03945.js": "/hestia/precache-manifest.cdc49da5a5583334d3ff811aa6d03945.js",
+    "precache-manifest.bcb4e08368483b7f7ab295c2143592c6.js": "/hestia/precache-manifest.bcb4e08368483b7f7ab295c2143592c6.js",
     "service-worker.js": "/hestia/service-worker.js",
     "static/css/main.c3f071a1.chunk.css.map": "/hestia/static/css/main.c3f071a1.chunk.css.map",
     "static/media/details-1.jpeg": "/hestia/static/media/details-1.50c23e62.jpeg",

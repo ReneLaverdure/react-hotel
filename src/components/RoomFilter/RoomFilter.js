@@ -4,20 +4,18 @@ import {RoomContext} from '../../roomContext';
 
 // get all unique values
 const getUnique = (item,value) => {
-  console.log(item)
   return [...new Set(item.map(item => item.fields[value]))];
 }
 
 export default function RoomFilter() {
   const context = useContext(RoomContext);
-  console.log(context)
+ 
   const {
     type,capacity,price,minPrice,maxPrice,minSize,maxSize,breakfast,pets
   } = context.roomData;
 
   const handleChange = context.handleChange
-  console.log(price);
-  console.log(maxPrice)
+
   let types = getUnique(context.roomData.rooms, 'type');
   // add all
   types = ['all', ...types];

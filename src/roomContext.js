@@ -22,6 +22,45 @@ export const RoomProvider = (props) => {
   })
 
   useEffect(() => {
+   
+
+    const filterRooms = () => {
+      let {
+        rooms, type, capacity, price, minSize, maxSize, breakfast, pets
+      } = roomData
+      // all the room
+      let tempRooms = [...rooms];
+      capacity = parseInt(capacity);
+      price = parseInt(price);
+  
+      
+      //filter by type
+      if(type !== 'all'){
+        tempRooms = tempRooms.filter(room => room.fields.type === type)
+      }
+      //filter by capacity
+      if(capacity !== 1) {
+        tempRooms = tempRooms.filter(room => room.fields.capacity >= capacity)
+      }
+      // filter by price
+      tempRooms = tempRooms.filter(room => room.fields.price <= price);
+      //filter by size
+      tempRooms =tempRooms.filter(room => room.fields.size >= minSize && room.fields.size <= maxSize);
+      //filter by breakfast
+      if(breakfast) {
+        tempRooms = tempRooms.filter(room => room.fields.breakfast === true);
+      }
+      //filter by pets
+      if(pets) {
+        tempRooms = tempRooms.filter(room => room.fields.pets === true);
+      }
+  
+      setRoomData({
+        ...roomData,
+        sortedRooms: tempRooms
+      })
+    }
+
     filterRooms();
   
   }, [roomData.type, roomData.capacity, roomData.price, roomData.minSize, roomData.maxSize, roomData.breakfast, roomData.pets]);
@@ -73,51 +112,12 @@ export const RoomProvider = (props) => {
 
   const getRoom = (slug) => {
     let tempRooms = [...roomData.rooms];
-    console.log(tempRooms)
+   
     const room = tempRooms.find(room => room.fields.slug === slug);
     return room;
   }
 
-  const filterRooms = () => {
-    let {
-      rooms, type, capacity, price, minSize, maxSize, maxPrice, breakfast, pets
-    } = roomData
-    // all the room
-    let tempRooms = [...rooms];
-    capacity = parseInt(capacity);
-    price = parseInt(price);
-
-    console.log(type)
-    //filter by type
-    if(type !== 'all'){
-      tempRooms = tempRooms.filter(room => room.fields.type === type)
-    }
-    //filter by capacity
-    if(capacity !== 1) {
-      tempRooms = tempRooms.filter(room => room.fields.capacity >= capacity)
-    }
-    // filter by price
-    tempRooms = tempRooms.filter(room => room.fields.price <= price);
-    //filter by size
-    tempRooms =tempRooms.filter(room => room.fields.size >= minSize && room.fields.size <= maxSize);
-    //filter by breakfast
-    if(breakfast) {
-      tempRooms = tempRooms.filter(room => room.fields.breakfast === true);
-    }
-    //filter by pets
-    if(pets) {
-      tempRooms = tempRooms.filter(room => room.fields.pets === true);
-    }
-
-    console.log(tempRooms)
-    console.log(roomData.sortedRooms)
-    console.log(roomData)
-
-    setRoomData({
-      ...roomData,
-      sortedRooms: tempRooms
-    })
-  }
+  
 
   return(
     <RoomContext.Provider value={{roomData: roomData, handleChange, getRoom}}>

@@ -11,3 +11,9 @@
   grid-row-gap: 10px;
   grid-column-gap: 10px;
 }
+
+.NoRoom{
+  padding: 2rem;
+  background: var(--primaryColor);
+  color: white;
+}

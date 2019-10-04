@@ -1,11 +1,11 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import classes from './Gallery.module.css';
 import {RoomContext} from '../../roomContext';
   
 function Gallery(){
   const context = useContext(RoomContext);
   
-  let {roomData, data} = context;
+  let {roomData} = context;
   let gallery = roomData.gallery;
 
   return(

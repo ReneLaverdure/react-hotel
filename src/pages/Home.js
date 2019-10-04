@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../components/Hero/Hero';
-import Tiles from '../components/Tiles/Tiles';
 import Services from '../components/Services/Services';
 import Gallery from '../components/Gallery/Gallery';
 import Featured from '../components/Featured/Featured';

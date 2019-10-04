@@ -4,7 +4,7 @@ import {FaBook, FaMapMarkedAlt, FaCameraRetro, FaHeadphones, FaPlane, FaShopping
 import classes from './Services.module.css';
 
 function Services(){
-  const [services, setServices] = useState([
+  const [services] = useState([
     {
       icon: <FaBook />,
       title: "Book in at anytime",

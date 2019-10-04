@@ -13,8 +13,6 @@ function Navbar() {
     setNav(!nav);
   }
 
-  console.log(classes.Navbar)
-
   return (
     <nav className={classes.Navbar} >
 

@@ -7,7 +7,7 @@ function Featured(){
   const rooms = useContext(RoomContext);
   let featured = rooms.roomData.featuredRooms;
 
-  console.log(featured)
+  
 
   return(
     <div className={classes.Featured}>

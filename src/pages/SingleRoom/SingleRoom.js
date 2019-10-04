@@ -1,18 +1,13 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import classes from './SingleRoom.module.css';
 import {Link} from 'react-router-dom';
 import {RoomContext} from '../../roomContext'
 
 import StyledHero from '../../components/StyledHero/StyledHero';
 import Banner from '../../components/Banner/Banner';
-import { defaultCoreCipherList } from 'constants';
 
 export default function SingleRoom(props) {
   const context = useContext(RoomContext);
-
-  // const [slug, setSlug] = useState({
-  //   slug: props.match.params.slug
-  // })
 
   const slug = props.match.params.slug
   const {getRoom} = context;

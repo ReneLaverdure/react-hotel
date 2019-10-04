@@ -8,7 +8,7 @@ export default function RoomList() {
   let context = useContext(RoomContext);
   let rooms = context.roomData.sortedRooms
 
-  console.log(rooms)
+ 
   if(rooms.length === 0) {
     return(
      <div className={classes.NoRoom}>

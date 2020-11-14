@@ -11,7 +11,7 @@ export default function SingleRoom(props) {
 
   const slug = props.match.params.slug
   const {getRoom} = context;
-  const room = getRoom(slug);
+  const room = getRoom(slug); 
 
   const {name,description,capacity,size,price,extras,breakfast,pets,images} = room.fields;
 

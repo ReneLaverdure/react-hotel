@@ -104,9 +104,7 @@ export const RoomProvider = (props) => {
     setRoomData({
       ...roomData,
       [name]: value
-    })
-
-   
+    }) 
 
   }
 
